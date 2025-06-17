@@ -1,0 +1,301 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#input, select, textarea{
+  color: #f3f4f9;
+}
+
+textarea:focus, #input:focus {
+  color: #f3f3f5;
+}
+
+.par{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.container {
+  position: relative;
+  max-width: fit-content;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+  width: 600px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 0px;
+}
+.input-box label {
+  color: #333;
+  display: flex;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.det{
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff);
+    --gray: #34495e;
+    --darkgray: #2c3e50;
+  }
+  
+  select {
+   
+    appearance: none;
+    outline: 10px red;
+    border: 0;
+    box-shadow: none;
+  
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    background-color: var(--darkgray);
+    background-image: none;
+    cursor: pointer;
+  }
+ 
+  select::-ms-expand {
+    display: none;
+  }
+  
+  .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+  }
+  
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+
+  .select:hover::after {
+    color: #f39c12;
+  }
+  
+
+  
+  a {
+    font-weight: bold;
+    color: var(--gray);
+    text-decoration: drop-shadow;
+    padding: .25em;
+    border-radius: .50em;
+    background: pink;
+  }
+  
+ 
+  .sel {
+    position : absolute;
+    top: 50%;
+    left : 50%;
+    transform :
+    translate(-50%,-50%); 
+  }
+  
+  .down_note {
+      display: flex;
+      justify-content: center;
+  
+  }
+
+
+
+
+.button_payment{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+svg {
+  width: 3.25em;
+  transform-origin: center;
+  animation: rotate4 2s linear infinite;
+ }
+ 
+ circle {
+  fill: none;
+  stroke: hsl(215, 69%, 11%);
+  stroke-width: 2;
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: dash4 1.5s ease-in-out infinite;
+ }
+ 
+ @keyframes rotate4 {
+  100% {
+   transform: rotate(360deg);
+  }
+ }
+ 
+ @keyframes dash4 {
+  0% {
+   stroke-dasharray: 1, 200;
+   stroke-dashoffset: 0;
+  }
+ 
+  50% {
+   stroke-dasharray: 90, 200;
+   stroke-dashoffset: -35px;
+  }
+ 
+  100% {
+   stroke-dashoffset: -125px;
+  }
+ }
+ .input-box-property{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+ }
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 350px);
+  gap: 30px;
+}
+
+.exit-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 70px;
+}
+
+.grid-item input {
+  width: 80%;
+  padding: 5px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  width: 100%;
+  height: 900px;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-size: 70em 60em;
+}
+.players-count {
+  color: blanchedalmond;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.game-id-error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f8d7da;
+  border: 2px solid #f5c6cb;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-id-error-text {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  color: #721c24;
+  text-align: center;
+  font-weight: bold;
+}
+.players-count{
+  margin-top: 20px;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
